@@ -58,9 +58,9 @@ public class install_repos extends Application {
             BufferedReader r = new BufferedReader(isr);
             gcc_include_path = r.readLine();
             if (OS_TYPE.get_arch() == 64)
-                gcc_include_path = gcc_include_path.replace("\\bin\\gcc.exe", "\\x86_64-w64-mingw32\\include\\");
+                gcc_include_path = gcc_include_path.replace("\\bin\\gcc.exe", "/x86_64-w64-mingw32/include/");
             else if (OS_TYPE.get_arch() == 32)
-                gcc_include_path = gcc_include_path.replace("\\bin\\gcc.exe", "\\x86-w64-mingw32\\include\\");
+                gcc_include_path = gcc_include_path.replace("\\bin\\gcc.exe", "/x86-w64-mingw32/include/");
             else {
                 r.close();
                 isr.close();
