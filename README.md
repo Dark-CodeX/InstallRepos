@@ -1,4 +1,5 @@
 # Install Repos
+![build-status](https://github.com/Dark-CodeX/InstallRepos/actions/workflows/maven.yml/badge.svg)
 * ### Install GitHub Repository on any Operating System (Linux, Mac, Windows).
 * ### Requires Java JRE 17.0.0.1 or later.
 * ### Repository Includes:
