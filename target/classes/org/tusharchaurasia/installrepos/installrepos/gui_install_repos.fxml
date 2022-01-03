@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--MIT License
+
+Copyright (c) 2021 Tushar Chaurasia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. -->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gui_grid_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.tusharchaurasia.installrepos.installrepos.install_repos_controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="291.87875961346936" minHeight="10.0" prefHeight="288.8817198185475" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="193.97536300702401" minHeight="10.0" prefHeight="111.05716537518805" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <GridPane alignment="CENTER" hgap="5.0" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+        <Button fx:id="gui_sstring_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_event_gui_sstring_btn" text="Install sstring" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <tooltip>
+                <Tooltip text="Installs GitHub Repo from:&#13;&#10;`https://github.com/Dark-CodeX/sstring.git`" />
+            </tooltip>
+        </Button>
+        <Button fx:id="gui_vector_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_event_gui_vector_btn" text="Install vector" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <tooltip>
+                <Tooltip text="Installs GitHub Repo from:&#13;&#10;`https://github.com/Dark-CodeX/vector.git`" />
+            </tooltip>
+        </Button>
+        <Button fx:id="gui_map_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_event_gui_map_btn" text="Install map" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <tooltip>
+                <Tooltip text="Installs GitHub Repo from:&#13;&#10;`https://github.com/Dark-CodeX/map.git`" />
+            </tooltip>
+        </Button>
+        <Button fx:id="gui_returns_btn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#click_event_gui_returns_btn" text="Install returns" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <tooltip>
+                <Tooltip text="Installs GitHub Repo from:&#13;&#10;`https://github.com/Dark-CodeX/returns.git`" />
+            </tooltip>
+        </Button>
+    </GridPane>
+    <TextArea fx:id="gui_txt_info" editable="false" prefHeight="200.0" prefWidth="200.0" text="Install GitHub Repos (`https://www.github.com/Dark-CodeX/`)" />
+</GridPane>
