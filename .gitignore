@@ -17,3 +17,4 @@ crashlytics.properties
 crashlytics-build.properties
 .vs/
 .vscode/
+target/
