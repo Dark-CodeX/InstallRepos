@@ -49,8 +49,7 @@ public class install_repos extends Application {
     public static void main(String[] args) throws IOException {
         if (OS_TYPE.get_os() == OS_TYPE.OS.LINUX || OS_TYPE.get_os() == OS_TYPE.OS.MAC_OS) {
             gcc_include_path = "/usr/include/";
-        }
-        else {
+        } else {
             ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "where gcc");
             builder.redirectErrorStream(true);
             Process p = builder.start();
@@ -69,7 +68,7 @@ public class install_repos extends Application {
             r.close();
             isr.close();
         }
-        if(gcc_include_path.length() == 0) {
+        if (gcc_include_path.length() == 0) {
             System.err.println("Could not detect GCC include path.");
             System.exit(-1);
         }
