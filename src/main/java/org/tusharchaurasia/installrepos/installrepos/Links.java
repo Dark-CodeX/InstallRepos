@@ -25,6 +25,15 @@ SOFTWARE.
 package org.tusharchaurasia.installrepos.installrepos;
 
 public class Links {
+
+    public static String[] repos = {
+            "sstring",
+            "vector",
+            "map",
+            "returns",
+            "set"
+    };
+
     public static String[] sstring_urls = {
             "https://raw.githubusercontent.com/Dark-CodeX/sstring/master/sstring/sstring.h",
             "https://raw.githubusercontent.com/Dark-CodeX/SafeString/main/sstring/prototype_err.h",
@@ -44,4 +53,10 @@ public class Links {
     public static String[] returns_urls = {
             "https://raw.githubusercontent.com/Dark-CodeX/returns/master/returns/default.hh",
             "https://raw.githubusercontent.com/Dark-CodeX/returns/master/returns/optional.hh"};
+
+    public static String[] set_urls = {
+            "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/prototype_err.h",
+            "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/set.h",
+            "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/set.hh"
+    };
 }

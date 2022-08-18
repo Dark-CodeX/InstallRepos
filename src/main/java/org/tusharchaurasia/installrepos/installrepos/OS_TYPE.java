@@ -42,7 +42,7 @@ public class OS_TYPE {
         }
         return os;
     }
-
+/* UNUSED CODE SNIPPET
     public static int get_arch() {
         return switch (System.getProperty("os.arch").toLowerCase()) {
             case "64", "amd64" -> 64;
@@ -50,4 +50,5 @@ public class OS_TYPE {
             default -> -1;
         };
     }
+ */
 }

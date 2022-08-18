@@ -31,8 +31,25 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class fs {
-    private static boolean delete_directory(String direc) {
-        File file = new File(direc);
+
+    public static String make_path(String path) {
+        StringBuilder sb = new StringBuilder(path);
+        if (OS_TYPE.get_os() == OS_TYPE.OS.WINDOWS) {
+            if (sb.charAt(sb.length() - 1) != '\\' && sb.charAt(sb.length() - 1) != '/')
+                sb.append("\\");
+            else
+                sb.setCharAt(sb.length() - 1, '\\');
+        } else {
+            if (sb.charAt(sb.length() - 1) != '\\' && sb.charAt(sb.length() - 1) != '/')
+                sb.append("/");
+            else
+                sb.setCharAt(sb.length() - 1, '/');
+        }
+        return sb.toString();
+    }
+
+    private static boolean delete_directory(String directory) {
+        File file = new File(directory);
         for (File sub_file : Objects.requireNonNull(file.listFiles())) {
             if (sub_file.isDirectory()) {
                 delete_directory(sub_file.getPath());
