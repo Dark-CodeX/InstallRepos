@@ -2,7 +2,7 @@
 ![build-status](https://github.com/Dark-CodeX/InstallRepos/actions/workflows/maven.yml/badge.svg)
 ![license-status](https://img.shields.io/github/license/Dark-CodeX/InstallRepos)
 * ### Install GitHub Repository on any Operating System (Linux, MacOS or Windows).
-* ### Requires Java JRE 17.0.0.1 or later.
+* ### Requires Java JRE 18.0.2 or later.
 * ### Repository Includes:
     * #### [sstring](https://www.github.com/Dark-CodeX/sstring.git)
     * #### [vector](https://www.github.com/Dark-CodeX/vector.git)
