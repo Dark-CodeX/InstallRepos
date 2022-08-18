@@ -12,5 +12,5 @@
     * ```Linux or Mac: `sudo java -jar install_repos.jar` ```
     * ```Windows(Administrator): `java -jar install_repos.jar` ```
 * ### Download the final executable file:
-    * #### [**GUI** Download Jar File (Cross-Platform)](https://github.com/Dark-CodeX/InstallRepos/releases/download/v1.0.0/InstallReposGUI.jar)
-    * #### [**CLI** Download Jar File (Cross-Platform)](https://github.com/Dark-CodeX/InstallRepos/releases/download/v1.0.0/InstallReposCLI.jar)
+    * #### [**GUI** Download Jar File (Cross-Platform)](https://github.com/Dark-CodeX/InstallRepos/releases/download/v1.1.0/InstallReposGUI.jar)
+    * #### [**CLI** Download Jar File (Cross-Platform)](https://github.com/Dark-CodeX/InstallRepos/releases/download/v1.1.0/InstallReposCLI.jar)
