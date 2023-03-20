@@ -57,6 +57,10 @@ public class install_repos_controller {
             fs.install(value.toString(), install_repos.gcc_include_path, Links.returns_urls, gui_txt_info);
         } else if ("set".equals(value)) {
             fs.install(value.toString(), install_repos.gcc_include_path, Links.set_urls, gui_txt_info);
+        } else if ("array".equals(value)) {
+            fs.install(value.toString(), install_repos.gcc_include_path, Links.array_urls, gui_txt_info);
+        } else if ("date-time".equals(value)) {
+            fs.install(value.toString(), install_repos.gcc_include_path, Links.date_time_urls, gui_txt_info);
         }
     }
 

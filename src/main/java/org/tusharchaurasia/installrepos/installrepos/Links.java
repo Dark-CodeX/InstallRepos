@@ -31,7 +31,9 @@ public class Links {
             "vector",
             "map",
             "returns",
-            "set"
+            "set",
+            "array",
+            "date-time"
     };
 
     public static String[] sstring_urls = {
@@ -55,8 +57,15 @@ public class Links {
             "https://raw.githubusercontent.com/Dark-CodeX/returns/master/returns/optional.hh"};
 
     public static String[] set_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/prototype_err.h",
-            "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/set.h",
             "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/set.hh"
+    };
+
+    public static String[] array_urls = {
+            "https://raw.githubusercontent.com/Dark-CodeX/array/master/array/array.hh"
+    };
+
+    public static String[] date_time_urls = {
+            "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/date.hh",
+            "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/time.hh"
     };
 }
