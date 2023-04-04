@@ -11,6 +11,7 @@
     * #### [set](https://www.github.com/Dark-CodeX/set.git)
     * #### [array](https://www.github.com/Dark-CodeX/array.git)
     * #### [date-time](https://www.github.com/Dark-CodeX/date-time.git)
+    * #### [heap-pair](https://www.github.com/Dark-CodeX/heap-pair.git)
 * ### Run the output program like this:
     * ```Linux or Mac: `sudo java -jar install_repos.jar` ```
     * ```Windows(Administrator): `java -jar install_repos.jar` ```
