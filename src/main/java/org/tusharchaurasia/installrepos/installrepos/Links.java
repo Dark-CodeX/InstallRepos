@@ -33,7 +33,8 @@ public class Links {
             "returns",
             "set",
             "array",
-            "date-time"
+            "date-time",
+            "heap-pair"
     };
 
     public static String[] sstring_urls = {
@@ -67,5 +68,9 @@ public class Links {
     public static String[] date_time_urls = {
             "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/date.hh",
             "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/time.hh"
+    };
+
+    public static String[] heap_pair_urls = {
+            "https://raw.githubusercontent.com/Dark-CodeX/heap-pair/master/heap-pair/heap-pair.hh"
     };
 }
