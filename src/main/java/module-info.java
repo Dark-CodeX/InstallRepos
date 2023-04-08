@@ -30,8 +30,8 @@
 */
 
 module org.tusharchaurasia.installrepos.installrepos {
-    requires javafx.controls;
-    requires javafx.fxml;
+    requires transitive javafx.controls;
+    requires transitive javafx.fxml;
 
     opens org.tusharchaurasia.installrepos.installrepos to javafx.fxml;
 
