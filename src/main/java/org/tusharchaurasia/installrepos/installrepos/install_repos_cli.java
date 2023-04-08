@@ -50,10 +50,28 @@ public class install_repos_cli {
                 + ((OS_TYPE.get_os() == OS_TYPE.OS.WINDOWS) ? "ADMINISTRATOR PRIVILEGES." : "SUPERUSER PRIVILEGES."));
         int option;
         while (true) {
-            System.out.println(
-                    "Which GitHub repository you want to uninstall:\n\t-1. sstring(`https://www.github.com/Dark-CodeX/sstring.git`)\n\t-2. vector(`https://www.github.com/Dark-CodeX/vector.git`)\n\t-3. map(`https://www.github.com/Dark-CodeX/map.git`)\n\t-4. returns(`https://www.github.com/Dark-CodeX/returns.git`)\n\t-5. set(`https://www.github.com/Dark-CodeX/set.git`)\n\t-6. set(`https://www.github.com/Dark-CodeX/array.git`)\n\t-7. set(`https://www.github.com/Dark-CodeX/date-time.git`)\n\t-8. set(`https://www.github.com/Dark-CodeX/heap-pair.git`)\n\t0. Exits the application.");
-            System.out.print(
-                    "Which GitHub repository you want to install:\n\t1. sstring(`https://www.github.com/Dark-CodeX/sstring.git`)\n\t2. vector(`https://www.github.com/Dark-CodeX/vector.git`)\n\t3. map(`https://www.github.com/Dark-CodeX/map.git`)\n\t4. returns(`https://www.github.com/Dark-CodeX/returns.git`)\n\t5. set(`https://www.github.com/Dark-CodeX/set.git`)\n\t6. set(`https://www.github.com/Dark-CodeX/array.git`)\n\t7. set(`https://www.github.com/Dark-CodeX/date-time.git`)\n\t8. set(`https://www.github.com/Dark-CodeX/heap-pair.git`)\n<option number>: ");
+            System.out.println("Which GitHub repository you want to uninstall:\n\t" +
+                    "-1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +
+                    "-2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
+                    "-3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
+                    "-4. returns [`https://www.github.com/Dark-CodeX/returns.git`]\n\t" +
+                    "-5. set [`https://www.github.com/Dark-CodeX/set.git`]\n\t" +
+                    "-6. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
+                    "-7. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
+                    "-8. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
+                    "0. Exits the application.");
+
+            System.out.print("Which GitHub repository you want to install:\n\t" +
+                    "1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +
+                    "2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
+                    "3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
+                    "4. returns [`https://www.github.com/Dark-CodeX/returns.git`]\n\t" +
+                    "5. set [`https://www.github.com/Dark-CodeX/set.git`]\n\t" +
+                    "6. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
+                    "7. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
+                    "8. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n" +
+                    "<option number>: ");
+
             option = scanner.nextInt();
             if (option == -1) {
                 fs.uninstall("sstring", gcc_include_path, null);
