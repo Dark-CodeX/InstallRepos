@@ -54,7 +54,7 @@ public class install_repos_cli {
                     "-1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +
                     "-2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
                     "-3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
-                    "-4. returns [`https://www.github.com/Dark-CodeX/returns.git`]\n\t" +
+                    "-4. optional [`https://www.github.com/Dark-CodeX/optional.git`]\n\t" +
                     "-5. set [`https://www.github.com/Dark-CodeX/set.git`]\n\t" +
                     "-6. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
                     "-7. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
@@ -65,7 +65,7 @@ public class install_repos_cli {
                     "1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +
                     "2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
                     "3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
-                    "4. returns [`https://www.github.com/Dark-CodeX/returns.git`]\n\t" +
+                    "4. optional [`https://www.github.com/Dark-CodeX/optional.git`]\n\t" +
                     "5. set [`https://www.github.com/Dark-CodeX/set.git`]\n\t" +
                     "6. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
                     "7. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
@@ -80,7 +80,7 @@ public class install_repos_cli {
             } else if (option == -3) {
                 fs.uninstall("map", gcc_include_path, null);
             } else if (option == -4) {
-                fs.uninstall("returns", gcc_include_path, null);
+                fs.uninstall("optional", gcc_include_path, null);
             } else if (option == -5) {
                 fs.uninstall("set", gcc_include_path, null);
             } else if (option == -6) {
@@ -99,7 +99,7 @@ public class install_repos_cli {
             } else if (option == 3) {
                 fs.install("map", gcc_include_path, Links.map_urls, null);
             } else if (option == 4) {
-                fs.install("returns", gcc_include_path, Links.returns_urls, null);
+                fs.install("optional", gcc_include_path, Links.optional_urls, null);
             } else if (option == 5) {
                 fs.install("set", gcc_include_path, Links.set_urls, null);
             } else if (option == 6) {

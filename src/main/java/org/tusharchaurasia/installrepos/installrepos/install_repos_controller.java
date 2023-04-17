@@ -61,8 +61,8 @@ public class install_repos_controller {
             fs.install(value.toString(), install_repos.gcc_include_path, Links.vector_urls, gui_txt_info);
         } else if ("map".equals(value)) {
             fs.install(value.toString(), install_repos.gcc_include_path, Links.map_urls, gui_txt_info);
-        } else if ("returns".equals(value)) {
-            fs.install(value.toString(), install_repos.gcc_include_path, Links.returns_urls, gui_txt_info);
+        } else if ("optional".equals(value)) {
+            fs.install(value.toString(), install_repos.gcc_include_path, Links.optional_urls, gui_txt_info);
         } else if ("set".equals(value)) {
             fs.install(value.toString(), install_repos.gcc_include_path, Links.set_urls, gui_txt_info);
         } else if ("array".equals(value)) {

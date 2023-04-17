@@ -37,7 +37,7 @@ public class Links {
             "sstring",
             "vector",
             "map",
-            "returns",
+            "optional",
             "set",
             "array",
             "date-time",
@@ -45,25 +45,16 @@ public class Links {
     };
 
     public static String[] sstring_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/sstring/master/sstring/sstring.h",
-            "https://raw.githubusercontent.com/Dark-CodeX/SafeString/main/sstring/prototype_err.h",
-            "https://raw.githubusercontent.com/Dark-CodeX/SafeString/main/sstring/binary.h",
-            "https://raw.githubusercontent.com/Dark-CodeX/SafeString/main/sstring/morse_code.h",
             "https://raw.githubusercontent.com/Dark-CodeX/SafeString/main/sstring/sstring.hh"};
 
     public static String[] vector_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/vector/main/vector/vector.h",
             "https://raw.githubusercontent.com/Dark-CodeX/vector/main/vector/vector.hh"};
 
     public static String[] map_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/map.hh",
-            "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/map.h",
             "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/prototype_err.h"};
 
-    public static String[] returns_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/returns/master/returns/default.hh",
-            "https://raw.githubusercontent.com/Dark-CodeX/returns/master/returns/optional.hh",
-            "https://raw.githubusercontent.com/Dark-CodeX/returns/master/returns/object.hh"};
+    public static String[] optional_urls = {
+            "https://raw.githubusercontent.com/Dark-CodeX/optional/master/optional/optional.hh",};
 
     public static String[] set_urls = {
             "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/set.hh"
