@@ -51,7 +51,7 @@ public class Links {
             "https://raw.githubusercontent.com/Dark-CodeX/vector/main/vector/vector.hh"};
 
     public static String[] map_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/prototype_err.h"};
+            "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/map.hh"};
 
     public static String[] optional_urls = {
             "https://raw.githubusercontent.com/Dark-CodeX/optional/master/optional/optional.hh",};
