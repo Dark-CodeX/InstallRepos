@@ -33,43 +33,35 @@ package org.tusharchaurasia.installrepos.installrepos;
 
 public class Links {
 
-    public static String[] repos = {
-            "sstring",
-            "vector",
-            "map",
-            "optional",
-            "set",
-            "array",
-            "date-time",
-            "heap-pair"
-    };
+        public static String[] repos = {
+                        "sstring",
+                        "vector",
+                        "map",
+                        "optional",
+                        "array",
+                        "date-time",
+                        "heap-pair"
+        };
 
-    public static String[] sstring_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/SafeString/main/sstring/sstring.hh"};
+        public static String[] sstring_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/sstring/main/sstring/sstring.hh" };
 
-    public static String[] vector_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/vector/main/vector/vector.hh"};
+        public static String[] vector_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/vector/main/vector/vector.hh" };
 
-    public static String[] map_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/map.hh"};
+        public static String[] map_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/map/master/map/map.hh" };
 
-    public static String[] optional_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/optional/master/optional/optional.hh",};
+        public static String[] optional_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/optional/master/optional/optional.hh", };
 
-    public static String[] set_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/set/master/set/set.hh"
-    };
+        public static String[] array_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/array/master/array/array.hh" };
 
-    public static String[] array_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/array/master/array/array.hh"
-    };
+        public static String[] date_time_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/date.hh",
+                        "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/time.hh" };
 
-    public static String[] date_time_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/date.hh",
-            "https://raw.githubusercontent.com/Dark-CodeX/date-time/main/date-time/time.hh"
-    };
-
-    public static String[] heap_pair_urls = {
-            "https://raw.githubusercontent.com/Dark-CodeX/heap-pair/master/heap-pair/heap-pair.hh"
-    };
+        public static String[] heap_pair_urls = {
+                        "https://raw.githubusercontent.com/Dark-CodeX/heap-pair/master/heap-pair/heap-pair.hh" };
 }

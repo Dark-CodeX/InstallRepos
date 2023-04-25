@@ -1,3 +1,4 @@
 Manifest-Version: 1.0
-Main-Class: org.tusharchaurasia.installrepos.installrepos.Start
+Main-Class: org.tusharchaurasia.installrepos.installrepos.install_repos_
+ cli
 

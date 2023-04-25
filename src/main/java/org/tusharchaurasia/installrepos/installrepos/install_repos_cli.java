@@ -55,21 +55,19 @@ public class install_repos_cli {
                     "-2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
                     "-3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
                     "-4. optional [`https://www.github.com/Dark-CodeX/optional.git`]\n\t" +
-                    "-5. set [`https://www.github.com/Dark-CodeX/set.git`]\n\t" +
-                    "-6. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
-                    "-7. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
-                    "-8. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
-                    "0. Exits the application.");
+                    "-5. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
+                    "-6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
+                    "-7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
+                    " 0. Exits the application.");
 
             System.out.print("Which GitHub repository you want to install:\n\t" +
-                    "1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +
-                    "2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
-                    "3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
-                    "4. optional [`https://www.github.com/Dark-CodeX/optional.git`]\n\t" +
-                    "5. set [`https://www.github.com/Dark-CodeX/set.git`]\n\t" +
-                    "6. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
-                    "7. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
-                    "8. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n" +
+                    " 1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +
+                    " 2. vector [`https://www.github.com/Dark-CodeX/vector.git`]\n\t" +
+                    " 3. map [`https://www.github.com/Dark-CodeX/map.git`]\n\t" +
+                    " 4. optional [`https://www.github.com/Dark-CodeX/optional.git`]\n\t" +
+                    " 5. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
+                    " 6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
+                    " 7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\n" +
                     "<option number>: ");
 
             option = scanner.nextInt();
@@ -82,12 +80,10 @@ public class install_repos_cli {
             } else if (option == -4) {
                 fs.uninstall("optional", gcc_include_path, null);
             } else if (option == -5) {
-                fs.uninstall("set", gcc_include_path, null);
-            } else if (option == -6) {
                 fs.uninstall("array", gcc_include_path, null);
-            } else if (option == -7) {
+            } else if (option == -6) {
                 fs.uninstall("date-time", gcc_include_path, null);
-            } else if (option == -8) {
+            } else if (option == -7) {
                 fs.uninstall("heap-pair", gcc_include_path, null);
             } else if (option == 0) {
                 scanner.close();
@@ -101,12 +97,10 @@ public class install_repos_cli {
             } else if (option == 4) {
                 fs.install("optional", gcc_include_path, Links.optional_urls, null);
             } else if (option == 5) {
-                fs.install("set", gcc_include_path, Links.set_urls, null);
-            } else if (option == 6) {
                 fs.install("array", gcc_include_path, Links.array_urls, null);
-            } else if (option == 7) {
+            } else if (option == 6) {
                 fs.install("date-time", gcc_include_path, Links.date_time_urls, null);
-            } else if (option == 8) {
+            } else if (option == 7) {
                 fs.install("heap-pair", gcc_include_path, Links.heap_pair_urls, null);
             } else {
                 System.err.println("Invalid choice `" + option + "`.");
