@@ -15,7 +15,7 @@ public class Start {
             install_repos.main(args);
         } catch (IOException e) {
             e.printStackTrace();
-            System.exit(-1);
+            System.exit(1);
         }
     }
 }

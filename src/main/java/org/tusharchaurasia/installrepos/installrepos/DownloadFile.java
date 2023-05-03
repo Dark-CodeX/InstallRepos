@@ -26,7 +26,7 @@ public class DownloadFile {
             url = new URL(location);
         } catch (MalformedURLException e) {
             e.printStackTrace();
-            System.exit(-1);
+            System.exit(1);
         }
         StringBuilder x = new StringBuilder();
         try {
@@ -35,7 +35,7 @@ public class DownloadFile {
                 x.append((char) datum);
         } catch (IOException e) {
             e.printStackTrace();
-            System.exit(-1);
+            System.exit(1);
         }
         return x.toString();
     }
