@@ -1,33 +1,9 @@
 /**
- * BSD 3-Clause License
- * 
- * Copyright (c) 2023, Tushar Chaurasia
- * 
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- * 
- * 1. Redistributions of source code must retain the above copyright notice, this
- *    list of conditions and the following disclaimer.
- * 
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- *    this list of conditions and the following disclaimer in the documentation
- *    and/or other materials provided with the distribution.
- * 
- * 3. Neither the name of the copyright holder nor the names of its
- *    contributors may be used to endorse or promote products derived from
- *    this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
- * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
- * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
- * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
- * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
+ * @file install_repos_cli.java
+ * @license This file is licensed under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007. You may obtain a copy of this license at https://www.gnu.org/licenses/gpl-3.0.en.html.
+ * @version 1.1.0
+ * @author Tushar Chaurasia (Dark-CodeX)
+ */
 
 package org.tusharchaurasia.installrepos.installrepos;
 
@@ -58,6 +34,8 @@ public class install_repos_cli {
                     "-5. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
                     "-6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
                     "-7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
+                    "-8. chunkio [`https://www.github.com/Dark-CodeX/chunkio.git`]\n\t" +
+                    "-9. mthread [`https://www.github.com/Dark-CodeX/mthread.git`]\n\t" +
                     " 0. Exits the application.");
 
             System.out.print("Which GitHub repository you want to install:\n\t" +
@@ -68,6 +46,8 @@ public class install_repos_cli {
                     " 5. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
                     " 6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
                     " 7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\n" +
+                    " 8. chunkio [`https://www.github.com/Dark-CodeX/chunkio.git`]\n\n" +
+                    " 9. mthread [`https://www.github.com/Dark-CodeX/mthread.git`]\n\n" +
                     "<option number>: ");
 
             option = scanner.nextInt();
@@ -85,6 +65,10 @@ public class install_repos_cli {
                 fs.uninstall("date-time", gcc_include_path, null);
             } else if (option == -7) {
                 fs.uninstall("heap-pair", gcc_include_path, null);
+            } else if (option == -8) {
+                fs.uninstall("chunkio", gcc_include_path, null);
+            } else if (option == -9) {
+                fs.uninstall("mthread", gcc_include_path, null);
             } else if (option == 0) {
                 scanner.close();
                 System.exit(0);
@@ -102,6 +86,10 @@ public class install_repos_cli {
                 fs.install("date-time", gcc_include_path, Links.date_time_urls, null);
             } else if (option == 7) {
                 fs.install("heap-pair", gcc_include_path, Links.heap_pair_urls, null);
+            } else if (option == 8) {
+                fs.install("chunkio", gcc_include_path, Links.chunkio_urls, null);
+            } else if (option == 9) {
+                fs.install("mthread", gcc_include_path, Links.mthread_urls, null);
             } else {
                 System.err.println("Invalid choice `" + option + "`.");
             }
