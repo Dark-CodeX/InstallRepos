@@ -45,8 +45,8 @@ public class install_repos_cli {
                     " 4. optional [`https://www.github.com/Dark-CodeX/optional.git`]\n\t" +
                     " 5. array [`https://www.github.com/Dark-CodeX/array.git`]\n\t" +
                     " 6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
-                    " 7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\n" +
-                    " 8. chunkio [`https://www.github.com/Dark-CodeX/chunkio.git`]\n\n" +
+                    " 7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
+                    " 8. chunkio [`https://www.github.com/Dark-CodeX/chunkio.git`]\n\t" +
                     " 9. mthread [`https://www.github.com/Dark-CodeX/mthread.git`]\n\n" +
                     "<option number>: ");
 
