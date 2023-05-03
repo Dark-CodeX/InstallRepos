@@ -64,7 +64,7 @@ public class Links {
 
         public static String[] chunkio_urls = {
                         "https://raw.githubusercontent.com/Dark-CodeX/chunkio/main/chunkio/chunkio_bytes.hh",
-                        "https://raw.githubusercontent.com/Dark-CodeX/chunkio/main/chunkio/chunkio_line.hh" };
+                        "https://raw.githubusercontent.com/Dark-CodeX/chunkio/main/chunkio/chunkio_lines.hh" };
 
         public static String[] mthread_urls = {
                         "https://raw.githubusercontent.com/Dark-CodeX/mthread/main/mthread/mthread.hh" };
