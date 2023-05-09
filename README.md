@@ -1,5 +1,4 @@
 # Install Repos
-![build-status](https://github.com/Dark-CodeX/InstallRepos/actions/workflows/maven.yml/badge.svg)
 ![license-status](https://img.shields.io/github/license/Dark-CodeX/InstallRepos)
 * ### Install my GitHub Repository on any Operating System (Linux, MacOS or Windows).
 * ### Requires Python 3
