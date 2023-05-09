@@ -8,6 +8,12 @@ if __name__ == "__main__":
     installation_path = str(input("Enter installation path: "))
     print(f"Installation Path = '{installation_path}'")
 
+    if len(installation_path) == 0:
+        print("err: path was empty")
+        exit(1)
+
+    installation_path = fs.fs.make_path_correct(installation_path)
+
     while True:
         print("Which GitHub repository you want to uninstall:\n\t" +
               "-1. sstring [`https://www.github.com/Dark-CodeX/sstring.git`]\n\t" +

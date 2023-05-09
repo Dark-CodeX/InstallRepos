@@ -18,7 +18,7 @@ def get_input_via_prompt():
 
 
 installation_path = get_input_via_prompt()
-
+installation_path = fs.fs.make_path_correct(installation_path)
 
 def install_selected():
     selected_item = combobox.get()
@@ -39,8 +39,10 @@ window.title("InstallReposGUI")
 window.maxsize(500, 200)
 window.minsize(500, 200)
 
-textbox = tk.Text(window, height=10, state="disabled")
+textbox = tk.Text(window, height=10)
 textbox.pack()
+textbox.insert(tk.END, f"Installation Path = '{installation_path}'")
+textbox.configure(state="disabled")
 
 bottom_frame = tk.Frame(window)
 bottom_frame.pack()

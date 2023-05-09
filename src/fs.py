@@ -11,6 +11,20 @@ import tkinter as tk
 
 class fs:
     @staticmethod
+    def make_path_correct(path: str):
+        if os.name == 'nt':
+            if not path.endswith('\\') and not path.endswith('/'):
+                path += '\\'
+            else:
+                path = path[:-1] + '\\'
+        else:
+            if not path.endswith('\\') and not path.endswith('/'):
+                path += '/'
+            else:
+                path = path[:-1] + '/'
+        return path
+
+    @staticmethod
     def delete_folder(loc: str, txt_box):
         try:
             shutil.rmtree(loc)
@@ -64,12 +78,13 @@ class fs:
                         if txt_box == None:
                             print(f"File '{i}' downloaded successfully")
                         else:
-                            txt_box.insert(tk.END, f"File '{i}' downloaded successfully\n")
+                            txt_box.insert(
+                                tk.END, f"File '{i}' downloaded successfully\n")
                 if txt_box == None:
                     print(f"'{package_name}' installed successfully")
                 else:
-                    txt_box.insert(tk.END, f"'{package_name}' installed successfully\n")
-
+                    txt_box.insert(
+                        tk.END, f"'{package_name}' installed successfully\n")
 
     @staticmethod
     def uninstall_repo(package_name: str, location: str, txt_box):
