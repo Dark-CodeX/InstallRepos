@@ -4,50 +4,58 @@
 
 import tkinter as tk
 from tkinter import ttk
+from tkinter import simpledialog
+import fs
+
+
+def get_input_via_prompt():
+    result = simpledialog.askstring("Input Path", "Enter installation path:")
+    if result:
+        return result
+    else:
+        print("err: no location was entered")
+        exit(1)
+
+
+installation_path = get_input_via_prompt()
 
 
 def install_selected():
     selected_item = combobox.get()
     textbox.configure(state="normal")
-    textbox.insert(tk.END, f"Installing: {selected_item}\n")
+    fs.fs.install_repo(selected_item, installation_path, textbox)
     textbox.configure(state="disabled")
 
 
 def uninstall_selected():
     selected_item = combobox.get()
     textbox.configure(state="normal")
-    textbox.insert(tk.END, f"Uninstalling: {selected_item}\n")
+    fs.fs.uninstall_repo(selected_item, installation_path, textbox)
     textbox.configure(state="disabled")
 
 
-# Create the main window
 window = tk.Tk()
 window.title("InstallReposGUI")
+window.maxsize(500, 200)
+window.minsize(500, 200)
 
-# Create the textbox
 textbox = tk.Text(window, height=10, state="disabled")
 textbox.pack()
 
-# Create the bottom section
 bottom_frame = tk.Frame(window)
 bottom_frame.pack()
 
-# Create the combobox
-items = ["sstring", "vector", "map", "optional", "array",
-         "date-time", "heap-pair", "chunkio", "mthread"]
-combobox = ttk.Combobox(bottom_frame, values=items, width=40)
-combobox.set(items[0])
+combobox = ttk.Combobox(bottom_frame, values=[
+                        "sstring", "vector", "map", "optional", "array", "date-time", "heap-pair", "chunkio", "mthread"], width=40, state='readonly')
+combobox.set("sstring")
 combobox.pack(side=tk.LEFT, padx=10)
 
-# Create the install button
 install_button = tk.Button(
     bottom_frame, text="Install", command=install_selected)
 install_button.pack(side=tk.LEFT, padx=5)
 
-# Create the uninstall button
 uninstall_button = tk.Button(
     bottom_frame, text="Uninstall", command=uninstall_selected)
 uninstall_button.pack(side=tk.LEFT, padx=5)
 
-# Start the main event loop
 window.mainloop()

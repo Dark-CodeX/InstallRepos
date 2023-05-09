@@ -38,39 +38,39 @@ if __name__ == "__main__":
             break
         # uninstallation
         elif opt == -1:
-            fs.fs.uninstall_repo("sstring", installation_path)
+            fs.fs.uninstall_repo("sstring", installation_path, None)
         elif opt == -2:
-            fs.fs.uninstall_repo("vector", installation_path)
+            fs.fs.uninstall_repo("vector", installation_path, None)
         elif opt == -3:
-            fs.fs.uninstall_repo("map", installation_path)
+            fs.fs.uninstall_repo("map", installation_path, None)
         elif opt == -4:
-            fs.fs.uninstall_repo("optional", installation_path)
+            fs.fs.uninstall_repo("optional", installation_path, None)
         elif opt == -5:
-            fs.fs.uninstall_repo("array", installation_path)
+            fs.fs.uninstall_repo("array", installation_path, None)
         elif opt == -6:
-            fs.fs.uninstall_repo("date-time", installation_path)
+            fs.fs.uninstall_repo("date-time", installation_path, None)
         elif opt == -7:
-            fs.fs.uninstall_repo("heap-pair", installation_path)
+            fs.fs.uninstall_repo("heap-pair", installation_path, None)
         elif opt == -8:
-            fs.fs.uninstall_repo("chunkio", installation_path)
+            fs.fs.uninstall_repo("chunkio", installation_path, None)
         elif opt == -9:
-            fs.fs.uninstall_repo("mthread", installation_path)
+            fs.fs.uninstall_repo("mthread", installation_path, None)
         # installation
         elif opt == 1:
-            fs.fs.install_repo("sstring", installation_path)
+            fs.fs.install_repo("sstring", installation_path, None)
         elif opt == 2:
-            fs.fs.install_repo("vector", installation_path)
+            fs.fs.install_repo("vector", installation_path, None)
         elif opt == 3:
-            fs.fs.install_repo("map", installation_path)
+            fs.fs.install_repo("map", installation_path, None)
         elif opt == 4:
-            fs.fs.install_repo("optional", installation_path)
+            fs.fs.install_repo("optional", installation_path, None)
         elif opt == 5:
-            fs.fs.install_repo("array", installation_path)
+            fs.fs.install_repo("array", installation_path, None)
         elif opt == 6:
-            fs.fs.install_repo("date-time", installation_path)
+            fs.fs.install_repo("date-time", installation_path, None)
         elif opt == 7:
-            fs.fs.install_repo("heap-pair", installation_path)
+            fs.fs.install_repo("heap-pair", installation_path, None)
         elif opt == 8:
-            fs.fs.install_repo("chunkio", installation_path)
+            fs.fs.install_repo("chunkio", installation_path, None)
         elif opt == 9:
-            fs.fs.install_repo("mthread", installation_path)
+            fs.fs.install_repo("mthread", installation_path, None)

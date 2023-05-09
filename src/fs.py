@@ -6,25 +6,34 @@ import shutil
 import downloader
 import links
 import os
+import tkinter as tk
 
 
 class fs:
     @staticmethod
-    def delete_folder(loc: str):
+    def delete_folder(loc: str, txt_box):
         try:
             shutil.rmtree(loc)
             return True
         except OSError as e:
-            print(f"err: {e.filename}: {e.strerror}")
-            return False
+            if txt_box == None:
+                print(f"err: '{e.filename}': {e.strerror}")
+                return False
+            else:
+                txt_box.insert(tk.END, f"err: '{e.filename}': {e.strerror}\n")
+                return False
 
-    def create_directory(path: str):
+    def create_directory(path: str, txt_box):
         try:
             os.makedirs(path)
             return True
         except OSError as e:
-            print(f"Error: {e.filename} - {e.strerror}")
-            return False
+            if txt_box == None:
+                print(f"err: '{e.filename}': {e.strerror}")
+                return False
+            else:
+                txt_box.insert(tk.END, f"err: '{e.filename}': {e.strerror}\n")
+                return False
 
     @staticmethod
     def get_file_name(url: str):
@@ -34,9 +43,9 @@ class fs:
             return None
 
     @staticmethod
-    def install_repo(package_name: str, location: str):
+    def install_repo(package_name: str, location: str, txt_box):
         new_loc = location + "/openutils/" + package_name
-        if fs.create_directory(new_loc) == False:
+        if fs.create_directory(new_loc, txt_box) == False:
             exit(1)
         else:
             urls = links.repos_links.get_urls(package_name)
@@ -45,16 +54,30 @@ class fs:
                 exit(1)
             else:
                 for i in urls:
-                    print(f"Downloading '{i}'")
-                    if downloader.downloader.download_file(i, new_loc + fs.get_file_name(i)) == False:
+                    if txt_box == None:
+                        print(f"Downloading '{i}'")
+                    else:
+                        txt_box.insert(tk.END, f"Downloading '{i}'\n")
+                    if downloader.downloader.download_file(i, new_loc + fs.get_file_name(i), txt_box) == False:
                         exit(1)
                     else:
-                        print(f"File '{i}' downloaded successfully")
-                print(f"'{package_name}' installed successfully")
+                        if txt_box == None:
+                            print(f"File '{i}' downloaded successfully")
+                        else:
+                            txt_box.insert(tk.END, f"File '{i}' downloaded successfully\n")
+                if txt_box == None:
+                    print(f"'{package_name}' installed successfully")
+                else:
+                    txt_box.insert(tk.END, f"'{package_name}' installed successfully\n")
+
 
     @staticmethod
-    def uninstall_repo(package_name: str, location: str):
-        if fs.delete_folder(location + "/openutils/" + package_name) == False:
+    def uninstall_repo(package_name: str, location: str, txt_box):
+        if fs.delete_folder(location + "/openutils/" + package_name, txt_box) == False:
             exit(1)
         else:
-            print(f"'{package_name}' uninstalled successfully")
+            if txt_box == None:
+                print(f"'{package_name}' uninstalled successfully")
+            else:
+                txt_box.insert(
+                    tk.END, f"'{package_name}' uninstalled successfully\n")
