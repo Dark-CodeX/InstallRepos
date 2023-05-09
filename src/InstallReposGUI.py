@@ -41,7 +41,7 @@ window.minsize(500, 200)
 
 textbox = tk.Text(window, height=10)
 textbox.pack()
-textbox.insert(tk.END, f"Installation Path = '{installation_path}'")
+textbox.insert(tk.END, f"Installation Path = '{installation_path}'\n")
 textbox.configure(state="disabled")
 
 bottom_frame = tk.Frame(window)
