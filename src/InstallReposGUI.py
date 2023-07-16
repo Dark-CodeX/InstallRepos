@@ -20,6 +20,7 @@ def get_input_via_prompt():
 installation_path = get_input_via_prompt()
 installation_path = fs.fs.make_path_correct(installation_path)
 
+
 def install_selected():
     selected_item = combobox.get()
     textbox.configure(state="normal")
@@ -48,7 +49,8 @@ bottom_frame = tk.Frame(window)
 bottom_frame.pack()
 
 combobox = ttk.Combobox(bottom_frame, values=[
-                        "sstring", "vector", "map", "optional", "array", "date-time", "heap-pair", "chunkio", "mthread"], width=40, state='readonly')
+                        "sstring", "vector", "map", "optional", "array",
+                        "date-time", "heap-pair", "chunkio"], width=40, state='readonly')
 combobox.set("sstring")
 combobox.pack(side=tk.LEFT, padx=10)
 

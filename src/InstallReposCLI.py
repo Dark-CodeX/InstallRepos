@@ -25,7 +25,6 @@ if __name__ == "__main__":
               "-6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
               "-7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
               "-8. chunkio [`https://www.github.com/Dark-CodeX/chunkio.git`]\n\t" +
-              "-9. mthread [`https://www.github.com/Dark-CodeX/mthread.git`]\n\t" +
               " 0. Exits the application.")
 
         print("Which GitHub repository you want to install:\n\t" +
@@ -37,7 +36,6 @@ if __name__ == "__main__":
               " 6. date-time [`https://www.github.com/Dark-CodeX/date-time.git`]\n\t" +
               " 7. heap-pair [`https://www.github.com/Dark-CodeX/heap-pair.git`]\n\t" +
               " 8. chunkio [`https://www.github.com/Dark-CodeX/chunkio.git`]\n\t" +
-              " 9. mthread [`https://www.github.com/Dark-CodeX/mthread.git`]\n\n" +
               "<option number>: ")
         opt = int(input(""))
 
@@ -60,8 +58,6 @@ if __name__ == "__main__":
             fs.fs.uninstall_repo("heap-pair", installation_path, None)
         elif opt == -8:
             fs.fs.uninstall_repo("chunkio", installation_path, None)
-        elif opt == -9:
-            fs.fs.uninstall_repo("mthread", installation_path, None)
         # installation
         elif opt == 1:
             fs.fs.install_repo("sstring", installation_path, None)
@@ -79,5 +75,3 @@ if __name__ == "__main__":
             fs.fs.install_repo("heap-pair", installation_path, None)
         elif opt == 8:
             fs.fs.install_repo("chunkio", installation_path, None)
-        elif opt == 9:
-            fs.fs.install_repo("mthread", installation_path, None)

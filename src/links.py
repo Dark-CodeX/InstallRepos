@@ -49,9 +49,6 @@ class repos_links:
         "https://raw.githubusercontent.com/Dark-CodeX/openutils/main/chunkio/chunkio_lines_reader.hh",
         "https://raw.githubusercontent.com/Dark-CodeX/openutils/main/chunkio/chunkio_writer.hh"]
 
-    mthread_urls = [
-        "https://raw.githubusercontent.com/Dark-CodeX/openutils/main/mthread/mthread.hh"]
-
     @staticmethod
     def get_urls(url: str):
         if url == "sstring":
@@ -70,7 +67,5 @@ class repos_links:
             return repos_links.heap_pair_urls
         elif url == "chunkio":
             return repos_links.chunkio_urls
-        elif url == "mthread":
-            return repos_links.mthread_urls
         else:
             return None
